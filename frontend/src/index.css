@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    html{
+        font-family: sans-serif;
+    }
+
+    body{
+        background-color: rgb(241, 241, 241);
+        overflow-x: hidden;
+    }
+
+    body.dark{
+        background-color: #111827;
+        color:#f3f4f6;
+    }
+} 
+
+@layer components{
+    .input-box {
+        @apply w-full text-sm bg-transparent border-[1.2px] px-5 py-3 rounded mb-4 outline-none
+    }
+
+
+.btn-primary{
+    @apply w-full text-sm bg-[#2B85FF] text-white p-2 rounded my-1 hover:bg-blue-700;
+}
+
+.icon-btn{
+    @apply text-xl text-slate-300 cursor-pointer hover:text-[#2B85FF];
+}
+.input-label{
+    @apply text-xs text-slate-400;
+} 
+}
+
+body.dark .navbar{
+    background-color: #1f2937;
+    color: white;
+}
+
+/* body.light .navbar {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Dark theme additional styles */
+  /* body.dark .navbar {
+    background-color: #333;
+    color: white;
+  }
+
+  :root{
+    --background-color:#f6f6f6;
+    --primary-text-color:#0a0a0a;
+    --secondary-text-color:#ffffff;
+    --toggle-bg:#f0eb9d;
+  }  */
